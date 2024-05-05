@@ -1,0 +1,181 @@
+*, html{
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-link {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+body {
+  background-color: #AEDBCE;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+}
+
+.isi {
+  background-color:  	#C4DDFF;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 15px 60px;
+  width: auto;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+i {
+  margin-left: 20px;
+}
+
+.home {
+  border-radius: 15px 60px;
+  background: #D3EBCD;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: auto;
+  height: 300px;
+  overflow: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#about {
+  text-align: left;
+  overflow: auto;
+  width: auto;
+}
+
+.gallery {
+  background-color: #F2F2F2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  background-color: #EAEAEA;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+h1, p {
+  margin-left: 20px;
+  overflow: auto;
+  padding: none;
+  font-family: "Microsoft YaHei";
+  color: #003459;
+}
+
+.navbar a {
+  font-family: "Microsoft YaHei";
+}
+
+.home h1 {
+  font-size: 40px;
+}
+
+.pp {
+  position: static;
+  border-radius: 15px 60px;
+  overflow: hidden;
+  float: right;
+  width: 240px;
+  height: 300px;
+}
+
+.p1 {
+  position: static;
+  overflow: hidden;
+  float: left;
+  width: 250px;
+  height: 200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ /* Add a black background color to the top navigation */
+.navbar {
+  top: 0;
+  background-color: #00171F;
+  overflow: hidden;
+  position: sticky;
+}
+
+.navbar-right {
+  float: right;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #D3EBCD;
+  color: black;
+  transition: .4s ease-in-out;
+  transition-delay: .3s;
+  border-radius: 10px;
+}
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
